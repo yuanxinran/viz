@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UI Animating on Scroll: GSAP + ScrollMagic</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./visualization.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="main-content">
+      <div id="navigation">
+        <img
+          class="navigation-avatar"
+          src="assets/navigation-avatar.svg"
+          alt="title"
+        />
+      </div>
+    </div>
+
+    <section class="non-viz title" id="title">
+      <img src="assets/title.svg" alt="title" />
+    </section>
+
+    <section class="non-viz introduction">
+      <div class="container-wrapper">
+        <div class="container">
+          <!-- <div class="img-container">
+            <img src="assets/avatar.svg" alt="avatar" />
+          </div> -->
+
+          <div class="txt-container">
+            <h3>Welcome to a basic wine guide for basics.</h3>
+            <p>
+              If the only wine you’ve had come in a box, this is the right place
+              for you. Learn about different wine styles, serving methods, and
+              pairings. With this knowledge in hand, you’ll be able to make your
+              friends think that you’re a wine connoisseur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="viz">
+      <div class="dots-container">
+        <svg id="dots-svg" width="1200px"></svg>
+      </div>
+
+      <div class="section">
+        <div class="container-wrapper">
+          <div class="txt-container">
+            <p>
+              We select the 12 most popular wines to walk you through the common
+              wine descriptors, serving instructions, pairing suggestions
+            </p>
+          </div>
+          <div class="graph-container">
+            <img
+              id="wine-bottles"
+              style="width: 1200px"
+              src="assets/wine.svg"
+              alt="title"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section" style="background: green">
+        <div class="container-wrapper">
+          <div class="txt-container">
+            <p>
+              We select the 12 most popular wines to walk you through the common
+              wine descriptors, serving instructions, pairing suggestions
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="non-viz visualization sticky">
+      <blockquote>
+        "You should totally subscribe to my channel now"<span></span>
+      </blockquote>
+      <img
+        id="office"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/office1.png"
+      />
+      <img
+        id="building"
+        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/sky.jpg"
+      />
+      <div id="box"></div>
+    </section>
+
+    <section>
+      <h1>Scroll up</h1>
+    </section>
+    <!-- partial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/animation.gsap.min.js"></script>
+    <script src="https://unpkg.com/scrollnav@3.0.1/dist/scrollnav.min.umd.js"></script>
+
+    <script src="../lib/jquery-3.4.1.min.js"></script>
+    <script src="../dist/data/wine-data.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      const content = document.querySelector('.main-content');
+      scrollnav.init(content);
+    </script>
+  </body>
+</html>

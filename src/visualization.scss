@@ -1,0 +1,48 @@
+#viz {
+  position: relative;
+  .dots-container {
+    width: 1200px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    z-index: 2;
+    transform: translate(-50%, 0);
+    #dots-svg {
+      opacity: 0;
+    }
+  }
+
+  .section {
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    background-color: purple;
+    .container-wrapper {
+      padding-top: 30vh;
+      width: 100%;
+      .txt-container {
+        width: 80%;
+        margin: auto auto;
+        display: flex;
+      }
+      .graph-container {
+        width: 100%;
+        position: realtive;
+        img {
+          position: absolute;
+          left: 50%;
+          transform: translate(-50%);
+        }
+      }
+    }
+  }
+}
+
+// .section-1 {
+//   .container-wrapper {
+//     width: 80%;
+//     .container {
+//       flex-direction: col;
+//     }
+//   }
+// }
