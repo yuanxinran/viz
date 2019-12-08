@@ -100,10 +100,10 @@ const wineData = [
     variety: 'Sauvignon Blanc',
     hex: '#f7f5a7',
     startPosition: {
-      cx: 680,
+      cx: 0,
     },
     colorPosition: {
-      cx: 1.4,
+      cx: 0.048,
     },
     sugarPosition: {
       cx: 1.1,
@@ -135,7 +135,7 @@ const wineData = [
       cx: 840,
     },
     colorPosition: {
-      cx: 0.12,
+      cx: 0.2,
     },
     sugarPosition: {
       cx: 1.9,
@@ -263,7 +263,7 @@ const wineData = [
       cx: 520,
     },
     colorPosition: {
-      cx: 0.02,
+      cx: 0.015,
     },
     sugarPosition: {
       cx: 1.3,
@@ -295,7 +295,7 @@ const wineData = [
       cx: 0.12,
     },
     colorPosition: {
-      cx: 490,
+      cx: 0.08,
     },
     sugarPosition: {
       cx: 3.9,
