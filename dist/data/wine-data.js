@@ -2,29 +2,29 @@ const wineData = [
   {
     _id: 0,
     variety: 'Pinot Noir',
-    hex: '#ad2e41',
+    hex: '#9c1e30',
     startPosition: {
       cx: 200,
     },
     colorPosition: {
-      cx: 0.02,
+      cx: 0.75,
     },
     sugarPosition: {
-      cx: -0.1,
+      cx: 0.7,
     },
     boldPosition: {
-      cx: 0.02,
+      cx: 0.4,
     },
     flavorPosition: {
-      cx: 730,
-      cy: 50,
+      cx: 940,
+      cy: 200,
     },
     glassPosition: {
-      cx: 0,
-      cy: 120,
+      cx: 1,
+      cy: 150,
     },
     temperaturePosition: {
-      cx: 0,
+      cx: 2,
       cy: 150,
     },
     color: 'red',
@@ -39,13 +39,13 @@ const wineData = [
       cx: 360,
     },
     colorPosition: {
-      cx: 0.42,
+      cx: 0.95,
     },
     sugarPosition: {
       cx: 0.1,
     },
     boldPosition: {
-      cx: 0.34,
+      cx: 0.9,
     },
     flavorPosition: {
       cx: 850,
@@ -53,11 +53,11 @@ const wineData = [
     },
     glassPosition: {
       cx: 0,
-      cy: 90,
+      cy: 130,
     },
     temperaturePosition: {
-      cx: 1,
-      cy: 120,
+      cx: 3,
+      cy: 150,
     },
     color: 'red',
     color_cx: 720,
@@ -66,18 +66,18 @@ const wineData = [
   {
     _id: 2,
     variety: 'Merlot',
-    hex: '#92321e',
+    hex: '#ab3e27',
     startPosition: {
       cx: 520,
     },
     colorPosition: {
-      cx: 0.45,
-    },
-    sugarPosition: {
       cx: 0.7,
     },
+    sugarPosition: {
+      cx: -0.1,
+    },
     boldPosition: {
-      cx: 0.98,
+      cx: 0.7,
     },
     flavorPosition: {
       cx: 800,
@@ -85,11 +85,11 @@ const wineData = [
     },
     glassPosition: {
       cx: 0,
-      cy: 60,
+      cy: 95,
     },
     temperaturePosition: {
-      cx: 2,
-      cy: 90,
+      cx: 3,
+      cy: 115,
     },
     color: 'red',
     color_cx: 790,
@@ -103,25 +103,25 @@ const wineData = [
       cx: 680,
     },
     colorPosition: {
-      cx: 0.51,
+      cx: 1.4,
     },
     sugarPosition: {
       cx: 1.1,
     },
     boldPosition: {
-      cx: 0.74,
+      cx: 0.02,
     },
     flavorPosition: {
-      cx: 950,
-      cy: 220,
+      cx: 720,
+      cy: 280,
     },
     glassPosition: {
-      cx: 5,
-      cy: 120,
+      cx: 4,
+      cy: 170,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 60,
+      cx: 1,
+      cy: 80,
     },
     color: 'white',
     color_cx: 1200,
@@ -135,25 +135,25 @@ const wineData = [
       cx: 840,
     },
     colorPosition: {
-      cx: 0.23,
+      cx: 0.12,
     },
     sugarPosition: {
       cx: 1.9,
     },
     boldPosition: {
-      cx: 0.67,
+      cx: 0.47,
     },
     flavorPosition: {
-      cx: 650,
-      cy: 220,
+      cx: 740,
+      cy: 50,
     },
     glassPosition: {
-      cx: 4,
-      cy: 120,
+      cx: 5,
+      cy: 150,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 30,
+      cx: 1,
+      cy: 45,
     },
     color: 'white',
     color_cx: 1260,
@@ -161,31 +161,31 @@ const wineData = [
   },
   {
     _id: 5,
-    variety: 'Rose',
+    variety: 'Dry Rose Blends',
     hex: '#df6a72',
     startPosition: {
       cx: 1000,
     },
     colorPosition: {
-      cx: 0.97,
+      cx: 0.55,
     },
     sugarPosition: {
       cx: 2.1,
     },
     boldPosition: {
-      cx: 0.56,
+      cx: 0.52,
     },
     flavorPosition: {
-      cx: 870,
-      cy: 50,
+      cx: 670,
+      cy: 200,
     },
     glassPosition: {
-      cx: 3,
-      cy: 120,
+      cx: 2,
+      cy: 130,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 90,
+      cx: 1,
+      cy: 150,
     },
     color: 'pink',
     color_cx: 1000,
@@ -193,31 +193,31 @@ const wineData = [
   },
   {
     _id: 6,
-    variety: 'Pinot Noir',
-    hex: '#ad2e41',
+    variety: 'Sweet Rose Blends',
+    hex: '#ffa696',
     startPosition: {
       cx: 200,
     },
     colorPosition: {
-      cx: 0.78,
+      cx: 0.5,
     },
     sugarPosition: {
-      cx: 2.9,
+      cx: 4.1,
     },
     boldPosition: {
-      cx: 0.24,
+      cx: 0.57,
     },
     flavorPosition: {
-      cx: 870,
-      cy: 100,
+      cx: 670,
+      cy: 250,
     },
     glassPosition: {
-      cx: 2,
-      cy: 120,
+      cx: 2.1,
+      cy: 95,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 120,
+      cx: 1,
+      cy: 115,
     },
     color: 'red',
     color_cx: 650,
@@ -225,31 +225,31 @@ const wineData = [
   },
   {
     _id: 7,
-    variety: 'Cabernet Sauvignon',
-    hex: '#68171b',
+    variety: 'Malbec',
+    hex: '#890c1f',
     startPosition: {
-      cx: 0.89,
+      cx: 0.95,
     },
     colorPosition: {
-      cx: 912,
+      cx: 0.82,
     },
     sugarPosition: {
-      cx: 3.1,
+      cx: 0.9,
     },
     boldPosition: {
-      cx: 0.87,
+      cx: 0.95,
     },
     flavorPosition: {
-      cx: 770,
-      cy: 100,
+      cx: 760,
+      cy: 300,
     },
     glassPosition: {
-      cx: 1,
-      cy: 120,
+      cx: 3,
+      cy: 140,
     },
     temperaturePosition: {
       cx: 3,
-      cy: 150,
+      cy: 80,
     },
     color: 'red',
     color_cx: 720,
@@ -257,31 +257,31 @@ const wineData = [
   },
   {
     _id: 8,
-    variety: 'Merlot',
-    hex: '#92321e',
+    variety: 'Pinot Grigio',
+    hex: '#f4fbab',
     startPosition: {
       cx: 520,
     },
     colorPosition: {
-      cx: 0.68,
+      cx: 0.02,
     },
     sugarPosition: {
-      cx: 3.9,
+      cx: 1.3,
     },
     boldPosition: {
-      cx: 0.46,
+      cx: 0.25,
     },
     flavorPosition: {
-      cx: 770,
+      cx: 690,
       cy: 100,
     },
     glassPosition: {
-      cx: 2,
-      cy: 120,
+      cx: 3.9,
+      cy: 140,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 60,
+      cx: 1,
+      cy: 10,
     },
     color: 'red',
     color_cx: 790,
@@ -289,31 +289,31 @@ const wineData = [
   },
   {
     _id: 9,
-    variety: 'Sauvignon Blanc',
-    hex: '#f7f5a7',
+    variety: 'Moscato',
+    hex: '#fae55e',
     startPosition: {
-      cx: 0.58,
+      cx: 0.12,
     },
     colorPosition: {
       cx: 490,
     },
     sugarPosition: {
-      cx: 4.1,
+      cx: 3.9,
     },
     boldPosition: {
-      cx: 0.24,
+      cx: 0.1,
     },
     flavorPosition: {
-      cx: 770,
-      cy: 100,
+      cx: 710,
+      cy: 75,
     },
     glassPosition: {
-      cx: 2,
-      cy: 120,
+      cx: 4.09,
+      cy: 140,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 60,
+      cx: 1,
+      cy: -25,
     },
     color: 'white',
     color_cx: 1200,
@@ -321,31 +321,31 @@ const wineData = [
   },
   {
     _id: 10,
-    variety: 'Chardonnay',
-    hex: '#ead183',
+    variety: 'Riesling',
+    hex: '#ffc300',
     startPosition: {
       cx: 840,
     },
     colorPosition: {
-      cx: 0.44,
+      cx: 0.2,
     },
     sugarPosition: {
-      cx: 4.2,
+      cx: 2.9,
     },
     boldPosition: {
-      cx: 0.82,
+      cx: 0.15,
     },
     flavorPosition: {
-      cx: 770,
-      cy: 100,
+      cx: 900,
+      cy: 65,
     },
     glassPosition: {
-      cx: 2,
-      cy: 120,
+      cx: 4,
+      cy: 112,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 60,
+      cx: 0,
+      cy: 115,
     },
     color: 'white',
     color_cx: 1260,
@@ -353,31 +353,31 @@ const wineData = [
   },
   {
     _id: 11,
-    variety: 'Rose',
-    hex: '#df6a72',
+    variety: 'White Zinfandel',
+    hex: '#ffc2b2',
     startPosition: {
       cx: 1000,
     },
     colorPosition: {
-      cx: 0.81,
+      cx: 0.42,
     },
     sugarPosition: {
-      cx: 2.8,
+      cx: 3.1,
     },
     boldPosition: {
-      cx: 0.21,
+      cx: 0.05,
     },
     flavorPosition: {
-      cx: 770,
-      cy: 100,
+      cx: 675,
+      cy: 147,
     },
     glassPosition: {
-      cx: 2,
-      cy: 120,
+      cx: 1.9,
+      cy: 95,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 60,
+      cx: 0,
+      cy: 150,
     },
     color: 'pink',
     color_cx: 1000,
