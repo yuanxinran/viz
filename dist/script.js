@@ -70,6 +70,26 @@ $(document).ready(function() {
       toGlassAnimation();
     })
     .addTo(controller);
+
+  const sceneTemperature = new ScrollMagic.Scene({
+    triggerElement: '#viz-temperature',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toTemperatureAnimation();
+    })
+    .addTo(controller);
+
+  const scenePairing = new ScrollMagic.Scene({
+    triggerElement: '#viz-pairing',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toPairingAnimation();
+    })
+    .addTo(controller);
 });
 
 function drawInitialDots() {
@@ -125,7 +145,7 @@ function toColorAnimation() {
     document.getElementById(
       `wine-${i}`
     ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() +
-      20}px)`;
+      60}px)`;
   });
 }
 
@@ -201,10 +221,55 @@ function toGlassAnimation() {
   });
 }
 
+function toTemperatureAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let tempX = wine.temperaturePosition.cx * 250 + 225;
+    let tempY = wine.temperaturePosition.cy;
+    let transformX = tempX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      6 +
+      tempY}px)`;
+  });
+}
+
+function toPairingAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(0px, ${getWindowHeightForViz() * 7 + 20}px)`;
+  });
+}
+
 function getWindowHeightForViz() {
   return (
     window.innerHeight ||
     document.documentElement.clientHeight ||
     document.body.clientHeight
   );
+}
+
+function initPairing() {
+  pairingData.forEach(pairing => {
+    console.log('hover over ' + pairing.food);
+    document.getElementById(`${pairing.food}`).addEventListener(
+      ('mouseover',
+      function() {
+        document
+          .getElementsByClassName('wine-circle')
+          .forEach(circle => (circle.style.opacity = 0.1));
+        pairing.forEach(id => {
+          document.getElementById(`wine-${id}`).style.opacity = 1;
+        });
+      })
+    );
+  });
 }

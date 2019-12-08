@@ -23,6 +23,10 @@ const wineData = [
       cx: 0,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 0,
+      cy: 150,
+    },
     color: 'red',
     color_cx: 650,
     color_cy: 400,
@@ -50,6 +54,10 @@ const wineData = [
     glassPosition: {
       cx: 0,
       cy: 90,
+    },
+    temperaturePosition: {
+      cx: 1,
+      cy: 120,
     },
     color: 'red',
     color_cx: 720,
@@ -79,6 +87,10 @@ const wineData = [
       cx: 0,
       cy: 60,
     },
+    temperaturePosition: {
+      cx: 2,
+      cy: 90,
+    },
     color: 'red',
     color_cx: 790,
     color_cy: 400,
@@ -106,6 +118,10 @@ const wineData = [
     glassPosition: {
       cx: 5,
       cy: 120,
+    },
+    temperaturePosition: {
+      cx: 3,
+      cy: 60,
     },
     color: 'white',
     color_cx: 1200,
@@ -135,6 +151,10 @@ const wineData = [
       cx: 4,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 3,
+      cy: 30,
+    },
     color: 'white',
     color_cx: 1260,
     color_cy: 400,
@@ -163,6 +183,10 @@ const wineData = [
       cx: 3,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 3,
+      cy: 90,
+    },
     color: 'pink',
     color_cx: 1000,
     color_cy: 400,
@@ -189,6 +213,10 @@ const wineData = [
     },
     glassPosition: {
       cx: 2,
+      cy: 120,
+    },
+    temperaturePosition: {
+      cx: 3,
       cy: 120,
     },
     color: 'red',
@@ -219,6 +247,10 @@ const wineData = [
       cx: 1,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 3,
+      cy: 150,
+    },
     color: 'red',
     color_cx: 720,
     color_cy: 400,
@@ -246,6 +278,10 @@ const wineData = [
     glassPosition: {
       cx: 2,
       cy: 120,
+    },
+    temperaturePosition: {
+      cx: 3,
+      cy: 60,
     },
     color: 'red',
     color_cx: 790,
@@ -275,6 +311,10 @@ const wineData = [
       cx: 2,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 3,
+      cy: 60,
+    },
     color: 'white',
     color_cx: 1200,
     color_cy: 400,
@@ -302,6 +342,10 @@ const wineData = [
     glassPosition: {
       cx: 2,
       cy: 120,
+    },
+    temperaturePosition: {
+      cx: 3,
+      cy: 60,
     },
     color: 'white',
     color_cx: 1260,
@@ -331,8 +375,20 @@ const wineData = [
       cx: 2,
       cy: 120,
     },
+    temperaturePosition: {
+      cx: 3,
+      cy: 60,
+    },
     color: 'pink',
     color_cx: 1000,
     color_cy: 400,
   },
+];
+
+const pairingData = [
+  {food: 'vegetables', wine: [0, 5, 6, 8, 9]},
+  {food: 'seafood', wine: [10, 8, 3, 11]},
+  {food: 'pork', wine: [10, 11, 0, 3, 4, 8]},
+  {food: 'poultry', wine: [10, 8, 3, 7, 11]},
+  {food: 'redmeat', wine: [11, 0, 2, 7, 1]},
 ];
