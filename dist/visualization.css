@@ -1,6 +1,13 @@
 #viz {
   position: relative;
 }
+#viz .wine-circle {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  opacity: 0%;
+}
 #viz .dots-container {
   width: 1200px;
   position: absolute;
@@ -9,32 +16,41 @@
   z-index: 2;
   transform: translate(-50%, 0);
 }
-#viz .dots-container #dots-svg {
-  opacity: 0;
-}
 #viz .section {
   height: 100vh;
   position: relative;
   box-sizing: border-box;
-  background-color: purple;
+}
+#viz .section #viz-sugar {
+  height: 150vh;
 }
 #viz .section .container-wrapper {
   padding-top: 30vh;
   width: 100%;
 }
 #viz .section .container-wrapper .txt-container {
-  width: 80%;
+  width: 1000px;
   margin: auto auto;
-  display: flex;
 }
-#viz .section .container-wrapper .graph-container {
-  width: 100%;
-  position: realtive;
+#viz .section .container-wrapper .txt-container .title {
+  font-size: 2em;
+  display: block;
+  font-weight: bold;
 }
-#viz .section .container-wrapper .graph-container img {
+#viz .section .container-wrapper .txt-container .content {
+  display: block;
+  font-size: 1em;
+}
+#viz .section .container-wrapper img {
   position: absolute;
+  width: 1000px;
+  top: 50vh;
   left: 50%;
   transform: translate(-50%);
+}
+
+#viz-sugar {
+  height: 150vh;
 }
 
 /*# sourceMappingURL=visualization.css.map */

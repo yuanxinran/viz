@@ -1,4 +1,7 @@
 document.getElementById('dots-svg').addEventListener('load', adjustSVGSize);
+
+const controller = new ScrollMagic.Controller();
+
 function adjustSVGSize() {
   let height = document.getElementById('viz').offsetHeight;
 
@@ -6,37 +9,73 @@ function adjustSVGSize() {
 }
 window.onresize = adjustSVGSize;
 
-function drawInitialDots() {
-  let inBetween = (1000 - 200) / 11;
-
-  wineData.forEach((wine, i) => {
-    let startx = 200 + i * inBetween;
-    let color = wine.hex;
-    let id = wine._id;
-    let circle = document.createElementNS(
-      'http://www.w3.org/2000/svg',
-      'circle'
-    );
-
-    circle.setAttribute('id', `wine-${i}`);
-    circle.setAttribute('cx', startx);
-    circle.setAttribute('cy', 450);
-    circle.setAttribute('r', 15);
-    circle.setAttribute('fill', color);
-    document.getElementById('dots-svg').appendChild(circle);
-  });
-}
-
 $(document).ready(function() {
   drawInitialDots();
+  const sceneIntro = new ScrollMagic.Scene({
+    triggerElement: '#viz-intro',
+    triggerHook: 0.6,
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toStartAnimation();
+    })
+    .addTo(controller);
+
+  const sceneColor = new ScrollMagic.Scene({
+    triggerElement: '#viz-color',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toColorAnimation();
+    })
+    .addTo(controller);
+
+  const sceneSugar = new ScrollMagic.Scene({
+    triggerElement: '#viz-sugar',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toSugarAnimation();
+    })
+    .addTo(controller);
+
+  const sceneBoldness = new ScrollMagic.Scene({
+    triggerElement: '#viz-boldness',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toBoldnessAnimation();
+    })
+    .addTo(controller);
+
+  const sceneFlavor = new ScrollMagic.Scene({
+    triggerElement: '#viz-flavor',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toFlavorAnimation();
+    })
+    .addTo(controller);
+
+  const sceneGlass = new ScrollMagic.Scene({
+    triggerElement: '#viz-glass',
+    triggerHook: 'onCenter',
+    duration: '100%',
+  })
+    .on('enter', function() {
+      toGlassAnimation();
+    })
+    .addTo(controller);
 });
 
-const controller = new ScrollMagic.Controller();
-
-var tlColor = new TimelineMax();
-
-function addAnimation() {
+function drawInitialDots() {
   let inBetween = (1000 - 200) / 11;
+  let windowHeight = getWindowHeightForViz();
+
   wineData.forEach((wine, i) => {
     let startx = 200 + i * inBetween;
     let color = wine.hex;
@@ -47,56 +86,125 @@ function addAnimation() {
     );
 
     circle.setAttribute('id', `wine-${i}`);
+    circle.setAttribute('class', 'wine-circle');
     circle.setAttribute('cx', startx);
-    circle.setAttribute('cy', 450);
+    circle.setAttribute('cy', windowHeight * 0.5);
     circle.setAttribute('r', 15);
     circle.setAttribute('fill', color);
     document.getElementById('dots-svg').appendChild(circle);
   });
 }
 
-var tl = new TimelineMax({onUpdate: updatePercentage});
-var tl2 = new TimelineMax();
+function toStartAnimation() {
+  let windowHeight = getWindowHeightForViz();
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let colorX = wine.colorPosition.cx * 1000 + 100;
+    let transformX = colorX - startX;
+    let id = wine._id;
 
-tl.from('blockquote', 0.5, {x: 200, opacity: 0});
-tl.from('span', 1, {width: 0}, '=-.5');
-tl.from('#office', 1, {x: -200, opacity: 0, ease: Power4.easeInOut}, '=-1');
-tl.from('#building', 1, {x: 200, opacity: 0, ease: Power4.easeInOut}, '=-.7');
-
-tl2.from('#box', 1, {opacity: 0, scale: 0});
-tl2.to('#box', 0.5, {
-  left: '20%',
-  scale: 1.3,
-  borderColor: 'white',
-  borderWidth: 12,
-  boxShadow: '1px 1px 0px 0px rgba(0,0,0,0.09)',
-});
-
-const scene = new ScrollMagic.Scene({
-  triggerElement: '.sticky',
-  triggerHook: 'onLeave',
-  duration: '100%',
-})
-  .setPin('.sticky')
-  .setTween(tl)
-  .addTo(controller);
-
-const scene2 = new ScrollMagic.Scene({
-  triggerElement: 'blockquote',
-})
-  .setTween(tl2)
-  .addTo(controller);
-
-function updatePercentage() {
-  //percent.innerHTML = (tl.progress() *100 ).toFixed();
-  tl.progress();
-  console.log(tl.progress());
+    // Standard syntax
+    document.getElementById(`wine-${i}`).style.opacity = '100%';
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(0px, 180px)`;
+  });
 }
 
-const scene3 = new ScrollMagic.Scene({
-  triggerElement: '.txt-container',
-  triggerHook: 'onLeave',
-  duration: '100%',
-})
-  .setTween('#dots-svg', 0.4, {y: 50, opacity: 1})
-  .addTo(controller);
+function toColorAnimation() {
+  let windowHeight = getWindowHeightForViz();
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let colorX = wine.colorPosition.cx * 1000 + 100;
+    let transformX = colorX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() +
+      20}px)`;
+  });
+}
+
+function toSugarAnimation() {
+  let windowHeight = getWindowHeightForViz();
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let colorX = wine.sugarPosition.cx * 200 + 200;
+    let transformX = colorX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      2 +
+      180}px)`;
+  });
+}
+
+function toBoldnessAnimation() {
+  let windowHeight = getWindowHeightForViz();
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let colorX = wine.boldPosition.cx * 1000 + 100;
+    let transformX = colorX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      3 +
+      60}px)`;
+  });
+}
+
+function toFlavorAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let flavorX = wine.flavorPosition.cx;
+    let flavorY = wine.flavorPosition.cy;
+    let transformX = flavorX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      4 +
+      flavorY}px)`;
+  });
+}
+
+function toGlassAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let glassX = wine.glassPosition.cx * 160 + 200;
+    let glassY = wine.glassPosition.cy;
+    let transformX = glassX - startX;
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      5 +
+      glassY}px)`;
+  });
+}
+
+function getWindowHeightForViz() {
+  return (
+    window.innerHeight ||
+    document.documentElement.clientHeight ||
+    document.body.clientHeight
+  );
+}

@@ -53,13 +53,13 @@ body h1 {
   position: relative;
 }
 .introduction .container-wrapper {
-  width: 80%;
+  width: 70%;
 }
 .introduction .container-wrapper .container {
   flex-direction: row;
 }
 .introduction .txt-container {
-  width: 60%;
+  width: 100%;
   display: inline-block;
 }
 

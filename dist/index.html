@@ -30,7 +30,7 @@
           </div> -->
 
           <div class="txt-container">
-            <h3>Welcome to a basic wine guide for basics.</h3>
+            <h2>Welcome to a basic wine guide for basics.</h2>
             <p>
               If the only wine you’ve had come in a box, this is the right place
               for you. Learn about different wine styles, serving methods, and
@@ -47,55 +47,96 @@
         <svg id="dots-svg" width="1200px"></svg>
       </div>
 
-      <div class="section">
+      <div class="section" id="viz-intro">
         <div class="container-wrapper">
           <div class="txt-container">
-            <p>
+            <h3>
               We select the 12 most popular wines to walk you through the common
               wine descriptors, serving instructions, pairing suggestions
-            </p>
+            </h3>
           </div>
-          <div class="graph-container">
-            <img
-              id="wine-bottles"
-              style="width: 1200px"
-              src="assets/wine.svg"
-              alt="title"
-            />
-          </div>
+          <img
+            id="wine-bottles"
+            style="width: 1200px"
+            src="assets/wine.svg"
+            alt="title"
+          />
         </div>
       </div>
 
-      <div class="section" style="background: green">
+      <div class="section" id="viz-color" style="background-color: azure">
         <div class="container-wrapper">
           <div class="txt-container">
-            <p>
-              We select the 12 most popular wines to walk you through the common
-              wine descriptors, serving instructions, pairing suggestions
-            </p>
+            <div class="title">Wine Color</div></br>
+            <div class="content">
+              Wine color is one of the strongest identifying factors of wine.
+              Besides indicating the difference between red, white, and rose,
+              wine color may also be a signal of the acidity or richness.
+            </div>
           </div>
+          <img id="color-scale" src="assets/color-scale.svg" alt="title" />
         </div>
       </div>
+
+      <div class="section" id="viz-sugar" style="background-color: antiquewhite">
+          <div class="container-wrapper">
+            <div class="txt-container">
+              <div class="title">Sweet & Dry</div></br>
+              <div class="content">
+                  The sweetest wines sometimes taste like juice, but where does the sweetness come from? A lot of it depends on the sugar levels in wine, but alcohol content, acidity, and tannin levels also determine how sweet or dry a wine is.
+              </div>
+            </div>
+            <img id="color-scale" src="assets/sugar-level.svg" alt="title" />
+          </div>
+        </div>
+
+
+
+        <div class="section" id="viz-boldness" style="background-color: bisque">
+            <div class="container-wrapper">
+              <div class="txt-container">
+                <div class="title">Boldness & Climate</div></br>
+                <div class="content">
+                    Boldness in wine depends on several factors, including tannin level and alcohol content. Additionally, climate can affect the boldness of a wine. Especially with red wines, lighter-bodied wines tend to grow in colder climates.
+
+                </div>
+              </div>
+              <img id="color-scale" src="assets/boldness-scale.svg" alt="title" />
+            </div>
+          </div>
+
+
+
+          <div class="section" id="viz-flavor" style="background-color: aliceblue">
+              <div class="container-wrapper">
+                <div class="txt-container">
+                  <div class="title">Flavors
+                    </div></br>
+                  <div class="content">
+                      How do wines contain flavors like apple, caramel, or even spices? The flavor from wine comes from the fermentation process, which releases flavors from the grapes themselves that may remind you of other fruits and foods. The science behind wine flavor is complex, and other factors including when the grapes are picked and fermentation can play a part.
+
+  
+                  </div>
+                </div>
+                <img id="color-scale" src="assets/flavor-wheel.svg" alt="title" />
+              </div>
+            </div>
+            <div class="section" id="viz-glass" style="background-color: seashell">
+                <div class="container-wrapper">
+                  <div class="txt-container">
+                    <div class="title">Serving Glass
+                      </div></br>
+                    <div class="content">
+                        If you’re new to wine, you might not even know that different wines have different serving glasses. Surprisingly, the shape of a wine glass can enhance its flavors and make it taste better.
+
+                  </div>
+                  </div>
+                  <img id="color-scale" src="assets/glasses.svg" alt="title" />
+                </div>
+              </div>
     </section>
 
-    <section class="non-viz visualization sticky">
-      <blockquote>
-        "You should totally subscribe to my channel now"<span></span>
-      </blockquote>
-      <img
-        id="office"
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/office1.png"
-      />
-      <img
-        id="building"
-        src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/sky.jpg"
-      />
-      <div id="box"></div>
-    </section>
-
-    <section>
-      <h1>Scroll up</h1>
-    </section>
+   
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
