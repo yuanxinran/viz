@@ -106,11 +106,12 @@ function drawInitialDots() {
     );
 
     circle.setAttribute('id', `wine-${i}`);
-    circle.setAttribute('class', 'wine-circle');
+    circle.setAttribute('class', 'wine-circle tooltip');
     circle.setAttribute('cx', startx);
     circle.setAttribute('cy', windowHeight * 0.5);
     circle.setAttribute('r', 15);
     circle.setAttribute('fill', color);
+    circle.setAttribute('title', wine.variety)
     document.getElementById('dots-svg').appendChild(circle);
   });
 }

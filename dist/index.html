@@ -5,6 +5,21 @@
     <title>UI Animating on Scroll: GSAP + ScrollMagic</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./visualization.css" />
+    <link rel="stylesheet" href="./styles/tooltipster.bundle.min.css" />
+    <link rel="stylesheet" href="./styles/tooltipster-sideTip-shadow.min.css" />
+
+    <script>
+      $(document).ready(function() {
+          $('.tooltip').tooltipster({
+          theme: 'tooltipster-shadow',
+          'maxWidth': 270,
+          contentAsHTML: true,
+          trigger: 'click',
+          position: 'bottom',
+          animationDuration: 500,
+        });
+      });
+    </script>
   </head>
   <body>
     <!-- partial:index.partial.html -->
@@ -134,7 +149,7 @@
                   <img id="color-scale" src="assets/glasses.svg" alt="title" />
                 </div>
               </div>
-            
+     
 
               <div class="section" id="viz-temperature" style="background-color: floralwhite">
                   <div class="container-wrapper">
@@ -184,5 +199,19 @@
       const content = document.querySelector('.main-content');
       scrollnav.init(content);
     </script>
+
+    <script type="text/javascript" src="./tooltipster.bundle.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+        theme: 'tooltipster-shadow',
+        'maxWidth': 270,
+        contentAsHTML: true,
+        trigger: 'click',
+        position: 'bottom',
+        animationDuration: 500,
+      });
+    });
+  </script>
   </body>
 </html>
