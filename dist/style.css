@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 body {
   margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   max-width: 1366px;
   margin: auto auto;
 }
@@ -130,4 +130,11 @@ section:nth-child(odd) {
 
 /*# sourceMappingURL=style.css.map */
 
+/* .tooltipster-sidetip .tooltipster-box {
+  background:#fff
+}
+
+.tooltipster-sidetip .tooltipster-content {
+  color: black;
+} */
 /*# sourceMappingURL=style.css.map */
