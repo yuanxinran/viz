@@ -41,6 +41,23 @@
   display: block;
   font-size: 1em;
 }
+#viz .section .container-wrapper #pairing {
+  position: absolute;
+  width: 1000px;
+  height: 200px;
+  top: 60vh;
+  left: 50%;
+  transform: translate(-50%);
+  display: flex;
+}
+#viz .section .container-wrapper #pairing .picture {
+  width: 150px;
+  height: 150px;
+  margin-left: 25px;
+  margin-right: 25px;
+  background-repeat: no-repeat;
+  background-size: 150px;
+}
 #viz .section .container-wrapper img {
   position: absolute;
   width: 1000px;
