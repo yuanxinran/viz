@@ -90,6 +90,16 @@ $(document).ready(function() {
       toPairingAnimation();
     })
     .addTo(controller);
+
+  pairingData.forEach(pairing => {
+    console.log('food ' + pairing.food);
+    document
+      .getElementById(`${pairing.food}`)
+      .addEventListener('onmousedown', highlightDots(pairing));
+    document
+      .getElementById(`${pairing.food}`)
+      .addEventListener('onmouseout', unhighlightDots());
+  });
 });
 
 function drawInitialDots() {
@@ -245,7 +255,7 @@ function toPairingAnimation() {
     // Standard syntax
     document.getElementById(
       `wine-${i}`
-    ).style.transform = `translate(0px, ${getWindowHeightForViz() * 7 + 20}px)`;
+    ).style.transform = `translate(0px, ${getWindowHeightForViz() * 7 + 10}px)`;
   });
 }
 
@@ -257,19 +267,25 @@ function getWindowHeightForViz() {
   );
 }
 
-function initPairing() {
-  pairingData.forEach(pairing => {
-    console.log('hover over ' + pairing.food);
-    document.getElementById(`${pairing.food}`).addEventListener(
-      ('mouseover',
-      function() {
-        document
-          .getElementsByClassName('wine-circle')
-          .forEach(circle => (circle.style.opacity = 0.1));
-        pairing.forEach(id => {
-          document.getElementById(`wine-${id}`).style.opacity = 1;
-        });
-      })
-    );
+function highlightDots(pairing) {
+  var circles = document.getElementsByClassName('wine-circle');
+
+  var i;
+  for (i = 0; i < circles.length; i++) {
+    circles[i].style.opacity = 0.1;
+  }
+
+  pairing.wine.forEach(id => {
+    document.getElementById(`wine-${id}`).style.opacity = 1;
   });
+}
+
+function unhighlightDots() {
+  console.log('unhover');
+  var circles = document.getElementsByClassName('wine-circle');
+
+  var i;
+  for (i = 0; i < circles.length; i++) {
+    circles[i].style.opacity = 1;
+  }
 }
