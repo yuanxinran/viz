@@ -36,8 +36,9 @@ function onScroll(event){
     $('#nav-menu a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        var refElementTop = refElement.position().top //+ 948*2
-        var refElementBottom = refElement.position().top + refElement.height()
+        var refElementHeight =  refElement.height();
+        var refElementTop = refElement.position().top + refElementHeight*2;
+        var refElementBottom = refElementTop + refElementHeight;
 
         if (refElementTop <= scrollPos && refElementBottom > scrollPos) {
             $("#nav-menu a").removeClass("active");
@@ -48,8 +49,6 @@ function onScroll(event){
         }
     });
 }
-
-
 
 // $('#nav-menu a').each(function () {
 //   var currLink = $(this);
