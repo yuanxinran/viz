@@ -20,14 +20,14 @@
   }
 
   .section {
-    #viz-sugar {
-      height: 150vh;
-    }
+    // #viz-sugar {
+    //   height: 150vh;
+    // }
     height: 100vh;
     position: relative;
     box-sizing: border-box;
     .container-wrapper {
-      padding-top: 30vh;
+      padding-top: 20vh;
       width: 100%;
       .txt-container {
         width: 1000px;
@@ -36,12 +36,38 @@
           font-size: 2em;
           display: block;
           font-weight: bold;
+          color: #1a1a1a;
         }
         .content {
           display: block;
-          font-size: 1em;
+          font-size: 1.1em;
+          opacity: 0.85;
+          width: 60%;
+          color: #262626;
+          line-height: 1.3;
         }
       }
+
+      #pairing {
+        position: absolute;
+        width: 1000px;
+        z-index: 10;
+        height: 200px;
+        top: 70vh;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        .picture {
+          width: 150px;
+          height: 150px;
+          margin-left: 25px;
+          margin-right: 25px;
+          // background-image: url('../dist/assets/food/vegetables.png');
+          background-repeat: no-repeat;
+          background-size: 150px;
+        }
+      }
+
       img {
         position: absolute;
         width: 1000px;
@@ -53,9 +79,9 @@
   }
 }
 
-#viz-sugar {
-  height: 150vh;
-}
+// #viz-sugar {
+//   height: 150vh;
+// }
 
 // .section-1 {
 //   .container-wrapper {

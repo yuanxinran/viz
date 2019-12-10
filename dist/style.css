@@ -34,7 +34,7 @@ body h1 {
   bottom: 15px;
   z-index: 999;
   position: fixed;
-  width: 100px;
+  width: 110px;
   
 }
 button#nav-img  {
@@ -146,10 +146,6 @@ button#nav-img  {
   margin-top: 15%;
 }
 
-section:nth-child(odd) {
-  background: #f1f1f1;
-}
-
 .sticky {
   background: white !important;
 }
@@ -173,13 +169,3 @@ section:nth-child(odd) {
 }
 
 /*# sourceMappingURL=style.css.map */
-
-
-
-/* .tooltipster-sidetip .tooltipster-box {
-  background:#fff
-}
-
-.tooltipster-sidetip .tooltipster-content {
-  color: black;
-} */

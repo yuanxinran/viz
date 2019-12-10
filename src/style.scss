@@ -20,7 +20,7 @@ body {
   z-index: 2;
   width: 200px;
   height: 200px;
-  background-color: red;
+  // background-color: red;
   img {
     width: 50%;
     height: 50%;
@@ -100,9 +100,9 @@ body {
     margin-top: 15%;
   }
 }
-section:nth-child(odd) {
-  background: #f1f1f1;
-}
+// section:nth-child(odd) {
+//   background: #f1f1f1;
+// }
 .sticky {
   background: white !important;
 }
