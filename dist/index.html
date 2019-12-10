@@ -12,11 +12,21 @@
     <!-- partial:index.partial.html -->
     <div class="main-content">
       <div id="navigation">
-        <img
-          class="navigation-avatar"
-          src="assets/navigation-avatar.svg"
-          alt="title"
-        />
+        <nav id="nav-menu">
+          <ol>
+            <li><a href="#viz-intro">Intro</a></li> <!-- class="active" -->
+            <li><a href="#viz-color">Color</a></li>
+            <li><a href="#viz-sugar">Sweetness</a></li>
+            <li><a href="#viz-boldness">Boldness</a></li>
+            <li><a href="#viz-flavor">Flavors</a></li>
+            <li><a href="#viz-glass">Serving Glass</a></li>
+            <li><a href="#viz-temperature">Serving Temperature</a></li>
+            <li><a href="#viz-pairing">Food Pairing</a></li>
+          </ol>
+        </nav>
+        <button id="nav-img" onclick="showNavMenu()">
+            <img class="navigation-avatar" src="assets/navigation-avatar.svg" alt="navigation"/>
+        </button>
       </div>
     </div>
 
@@ -104,8 +114,7 @@
           <div class="section" id="viz-flavor" >
               <div class="container-wrapper">
                 <div class="txt-container">
-                  <div class="title">Flavors
-                    </div></br>
+                  <div class="title">Flavors</div></br>
                   <div class="content">
                       How do wines contain flavors like apple, caramel, or even spices? The flavor from wine comes from the fermentation process, which releases flavors from the grapes themselves that may remind you of other fruits and foods. The science behind wine flavor is complex, and other factors including when the grapes are picked and fermentation can play a part.  
                   </div>
@@ -116,8 +125,7 @@
             <div class="section" id="viz-glass" >
                 <div class="container-wrapper">
                   <div class="txt-container">
-                    <div class="title">Serving Glass
-                      </div></br>
+                    <div class="title">Serving Glass</div></br>
                     <div class="content">
                         If you’re new to wine, you might not even know that different wines have different serving glasses. Surprisingly, the shape of a wine glass can enhance its flavors and make it taste better.
                   </div>
@@ -157,7 +165,6 @@
                     </div>
                 </div>
               </div>
-
     </section>
 
     <!-- partial -->
@@ -170,6 +177,7 @@
     <script src="../lib/jquery-3.4.1.min.js"></script>
     <script src="../dist/data/wine-data.js"></script>
     <script src="./script.js"></script>
+    <script src="./navigation.js"></script>
     <script>
       const content = document.querySelector('.main-content');
       scrollnav.init(content);
