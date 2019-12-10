@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sahdes of Wine</title>
+    <title>Shades of Wine</title>
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./visualization.css" />
     <link rel="stylesheet" href="./navigation.css" />
@@ -27,6 +27,7 @@
             <li><a href="#viz-glass">Serving Glass</a></li>
             <li><a href="#viz-temperature">Serving Temperature</a></li>
             <li><a href="#viz-pairing">Food Pairing</a></li>
+            <li><a href="#viz-summary">Summary</a></li>
           </ol>
         </nav>
         <button id="nav-img" onclick="showNavMenu()">
@@ -55,12 +56,7 @@
               wine descriptors, serving instructions, pairing suggestions
             </h3>
           </div>
-          <img
-            id="wine-bottles"
-            style="width: 1200px"
-            src="assets/wine.svg"
-            alt="title"
-          />
+          <img id="wine-bottles" style="width: 1200px" src="assets/wine.svg" alt="wine bottles"/>
         </div>
       </div>
 
@@ -74,7 +70,7 @@
               wine color may also be a signal of the acidity or richness.
             </div>
           </div>
-          <img id="color-scale" src="assets/color-scale.svg" alt="title" />
+          <img id="color-scale" src="assets/color-scale.svg" alt="color scale" />
         </div>
       </div>
 
@@ -86,7 +82,7 @@
                   The sweetest wines sometimes taste like juice, but where does the sweetness come from? A lot of it depends on the sugar levels in wine, but alcohol content, acidity, and tannin levels also determine how sweet or dry a wine is.
               </div>
             </div>
-            <img id="color-scale" src="assets/sugar-level.svg" alt="title" />
+            <img id="sugar-level" src="assets/sugar-level.svg" alt="sugar levels" />
           </div>
         </div>
 
@@ -96,10 +92,9 @@
                 <div class="title">Boldness & Climate</div></br>
                 <div class="content">
                     Boldness in wine depends on several factors, including tannin level and alcohol content. Additionally, climate can affect the boldness of a wine. Especially with red wines, lighter-bodied wines tend to grow in colder climates.
-
                 </div>
               </div>
-              <img id="color-scale" src="assets/boldness-scale.svg" alt="title" />
+              <img id="boldness-scale" src="assets/boldness-scale.svg" alt="boldness scale" />
             </div>
           </div>
 
@@ -111,7 +106,7 @@
                       How do wines contain flavors like apple, caramel, or even spices? The flavor from wine comes from the fermentation process, which releases flavors from the grapes themselves that may remind you of other fruits and foods. The science behind wine flavor is complex, and other factors including when the grapes are picked and fermentation can play a part.  
                   </div>
                 </div>
-                <img id="color-scale" src="assets/flavor-wheel.svg" alt="title" />
+                <img id="flavor-wheel" src="assets/flavor-wheel.svg" alt="flavor wheel" />
               </div>
             </div>
             <div class="section" id="viz-glass" >
@@ -122,38 +117,48 @@
                         If you’re new to wine, you might not even know that different wines have different serving glasses. Surprisingly, the shape of a wine glass can enhance its flavors and make it taste better.
                   </div>
                   </div>
-                  <img id="color-scale" src="assets/glasses.svg" alt="title" />
+                  <img id="wine-glasses" src="assets/glasses.svg" alt="wine glasses" />
                 </div>
               </div>
 
               <div class="section" id="viz-temperature" >
                   <div class="container-wrapper">
                     <div class="txt-container">
-                      <div class="title">Serving Temperature
-                        </div></br>
+                      <div class="title">Serving Temperature</div></br>
                       <div class="content">
                           You might have also noticed that wines taste better at certain temperatures. Red wines are typically best served below room temperature, white wines at a “fridge cold” temperature, and sparkling wines ice cold.
                       </div>
                     </div>
-                    <img id="color-scale" src="assets/temperature-scale.svg" alt="title" />
+                    <img id="temperature-scale" src="assets/temperature-scale.svg" alt="temperature scale" />
                 </div>
               </div>
 
               <div class="section" id="viz-pairing">
                   <div class="container-wrapper">
                     <div class="txt-container">
-                      <div class="title">Pairing
-                        </div></br>
+                      <div class="title">Pairing</div></br>
                       <div class="content">
                           Wine and food pairings might seem complex, but this knowledge will certainly help you step up your next dinner party. With wines, you can create contrasting pairings which create balance by contrasting tastes and flavors, and you can also create congruent pairings which amplify shared flavor compounds.
                       </div>
                     </div>
-                    <div id="pairing">
-                        <div class="picture" id="vegetables" style="background-image: url('assets/food/vegetables.png')"></div>
-                        <div class="picture" id="seafood" style="background-image: url('assets/food/seafood.png')"></div>
-                        <div class="picture" id="redmeat" style="background-image: url('assets/food/beef.png')"></div>
-                        <div class="picture" id="pork" style="background-image: url('assets/food/pork.png')"></div>
-                        <div class="picture" id="poultry" style="background-image: url('assets/food/poultry.png')"></div>
+                    <img id="pairing" src="assets/pairing-chart.svg" alt="wine pairings" />
+                </div>
+              </div>
+              
+              <div class="section" id="viz-summary" style="background-color: rgb(236, 227, 250)">
+                  <div class="container-wrapper">
+                    <div class="txt-container">
+                      <div class="title">Congrats!</div></br>
+                      <div class="content">
+                        <div id="summary-text">
+                          If you’ve reached this point, you’ve learned a lot about wine by now! To make it easy for you, we’ve created a chart with a few extra details so you can quickly find which wines you want to try.
+                        </div>
+                          <div id="wine-summary-table"></div>
+
+                          <!-- <button id="nav-img" class="summary-button" onclick="printDiv('wine-summary-table')">Print!</button> -->
+
+                          <button id="summary-print" class="summary-button" onclick="printDiv('wine-summary-table')">Print!</button>
+                          </div>
                     </div>
                 </div>
               </div>
@@ -170,6 +175,8 @@
     <script src="../dist/data/wine-data.js"></script>
     <script src="./script.js"></script>
     <script src="./navigation.js"></script>
+    <script src="./wine-summary.js"></script>
+    <script src="./printable.js"></script>
     <script>
       const content = document.querySelector('.main-content');
       scrollnav.init(content);

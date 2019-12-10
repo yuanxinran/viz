@@ -2,6 +2,7 @@ function showNavMenu () {
   console.log ('showNavMenu');
   var x = document.getElementById ('nav-menu');
   if (x.style.display === 'none') {
+    console.log("display none!");
     x.style.display = 'block';
   } else {
     x.style.display = 'none';
@@ -31,8 +32,6 @@ $ (document).ready (function () {
 
 function onScroll (event) {
   var scrollPos = $ (document).scrollTop ();
-  // console.log("onScroll", scrollPos);
-
   $ ('#nav-menu a').each (function () {
     var currLink = $ (this);
     var refElement = $ (currLink.attr ('href'));
@@ -48,14 +47,3 @@ function onScroll (event) {
     }
   });
 }
-
-// $('#nav-menu a').each(function () {
-//   var currLink = $(this);
-//   var refElement = $(currLink.attr("href"));
-//   var refElementTop = refElement.position().top + 948*2
-//   var refElementBottom = refElement.position().top + refElement.height()
-//   console.log(refElement);
-//   console.log("TOP",refElementTop);
-//   console.log("height",refElement.height());
-//   console.log("BOT",refElementBottom);
-// });

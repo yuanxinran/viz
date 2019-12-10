@@ -99,43 +99,17 @@ $ (document).ready (function () {
     .on ('enter', function () {
       toPairingAnimation ();
     })
-    .addTo (controller);
+    .addTo(controller);
 
-  pairingData.forEach (pairing => {
-    $ (`#${pairing.food}`).hover (
-      function () {
-        var circles = document.getElementsByClassName ('wine-circle');
-        console.log ('in!!!');
-
-        var i;
-        for (i = 0; i < circles.length; i++) {
-          circles[i].style.opacity = 0;
-        }
-
-        pairing.wine.forEach (id => {
-          document.getElementById (`wine-${id}`).style.opacity = 1;
-
-          $ (`#wine-${id}`).tooltipster ('open');
-        });
-      },
-      function () {
-        var circles = document.getElementsByClassName ('wine-circle');
-
-        var i;
-        for (i = 0; i < circles.length; i++) {
-          circles[i].style.opacity = 1;
-          $ (`#wine-${i}`).tooltipster ('close');
-        }
-      }
-    );
-
-    // document
-    //   .getElementById (`${pairing.food}`)
-    //   .addEventListener ('click', highlightDots (pairing), false);
-    // document
-    //   .getElementById (`${pairing.food}`)
-    //   .addEventListener ('onmouseout', unhighlightDots ());
-  });
+    const sceneSummary = new ScrollMagic.Scene({
+      triggerElement: '#viz-summary',
+      triggerHook: 'onCenter',
+      duration: '100%',
+    })
+      .on('enter', function() {
+        toSummaryAnimation();
+      })
+      .addTo(controller);
 });
 
 function drawInitialDots () {
@@ -290,8 +264,27 @@ function toPairingAnimation () {
   });
 }
 
-function getWindowHeightForViz () {
-  console.log (window.innerHeight);
+function toSummaryAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let summaryX = wine.summaryPosition.cx;// * 160 + 200;
+    let summaryY = wine.summaryPosition.cy;
+    let transformX = summaryX - startX;
+
+    console.log(wine.variety, summaryX, summaryY);
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      8 +
+      summaryY}px)`;
+  });
+}
+
+function getWindowHeightForViz() {
   return (
     window.innerHeight ||
     document.documentElement.clientHeight ||

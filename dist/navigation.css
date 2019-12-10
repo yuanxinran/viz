@@ -24,6 +24,7 @@ button#nav-img {
 }
 
 #nav-menu {
+  display: none;
   position: fixed;
   z-index: 999;
   right: 60px;
@@ -52,4 +53,124 @@ button#nav-img {
 #nav-menu a.active {
   color: black;
   font-weight: bold;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}  
+
+#nav-img {
+  position: fixed;
+  right: 10px;
+  bottom: 15px;
+  z-index: 999;
+  position: fixed;
+  width: 110px;
+  
+}
+button#nav-img  {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+#nav-menu {
+  position: fixed;
+  z-index: 999;
+  right: 60px;
+  bottom: 50px;
+  width: 150px;
+  padding: 15px 20px;
+  background-color: white;
+  box-shadow: 2px 5px 5px 2px rgba(200, 200, 200, 0.75);
+}
+
+#nav-menu ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+#nav-menu li {
+  margin: 10px 0;
+}
+
+#nav-menu a {
+  color: #838383;
+  text-decoration: none;
+}
+
+#nav-menu a.active {
+  color: black;
+  font-weight: bold;
+}
+
+
+
+#viz-summary .container-wrapper {
+  padding-top: 5vh !important;
+}
+#viz-summary .content {
+  padding-top: 0vh !important;
+  width: 100% !important;
+}
+
+#wine-summary-table {
+  margin: 20px 0px;
+}
+
+#wine-summary-table table {
+  width: 100%;
+}
+
+td.wine-subtable {
+  width: 33.3%;
+  padding: 10px;
+}
+
+.wine-table-row  {
+  vertical-align: top;
+}
+
+/* .wine-summary-subtable td {
+  vertical-align: top;
+  padding: 10px 3px !important;
+} */
+
+.wine-subtable-col1 {
+  width: 30px;
+}
+
+.wine-table-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.wine-bottle-img {
+  height: 115px !important;
+  top: auto !important;
+  left: auto !important;
+  transform: translate(-48.5%) !important;
+}
+
+
+
+.summary-button {
+  z-index: 999;
+  padding: 0 40px;  
+  background-color: white;
+  color: black;
+  border: 2px solid #4CAF50;
+}
+
+.summary-button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
 }
