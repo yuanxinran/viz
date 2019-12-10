@@ -34,6 +34,7 @@ body h1 {
   bottom: 15px;
   z-index: 999;
   position: fixed;
+  width: 100px;
   
 }
 button#nav-img  {
