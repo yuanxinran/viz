@@ -1,23 +1,4 @@
-
-
-// wineData.forEach((wine, i) => {
-//     let startX = 200 + i * inBetween;
-//     let summaryX = wine.summaryPosition.cx;// * 160 + 200;
-//     let summaryY = wine.summaryPosition.cy;
-//     let transformX = summaryX - startX;
-//     let id = wine._id;
-
-//     // Standard syntax
-//     document.getElementById(
-//       `wine-${i}`
-//     ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
-//       9 +
-//       summaryY}px)`;
-//   });
-
-console.log("create wine summary!");
-
-  function addTable() {
+function addSummaryTable() {
     var myTableDiv = document.getElementById("wine-summary-table");
   
     var table = document.createElement('TABLE');
@@ -65,7 +46,7 @@ console.log("create wine summary!");
                     var wine_img = document.createElement("img");
                     wine_img.setAttribute("src", "assets/wine-bottles/"+ name+".svg");
                     wine_img.setAttribute("class", "wine-bottle-img");
-                    winebottle_td.appendChild(wine_img);
+                    // winebottle_td.appendChild(wine_img);
                     winebottle_td.setAttribute("class", "wine-subtable-col1");
                     wine_tr2.appendChild(winebottle_td);
 
@@ -73,29 +54,8 @@ console.log("create wine summary!");
                     winename_td.appendChild(document.createTextNode(description));
                     wine_tr2.appendChild(winename_td);
             td.appendChild(wine_table);
-
         tr.appendChild(td);
-
     }
     myTableDiv.appendChild(table);
   }
-  addTable();
-
-//   var table = document.createElement('TABLE');
-//   table.border = '1';
-
-//   var tableBody = document.createElement('TBODY');
-//   table.appendChild(tableBody);
-
-//   for (var i = 0; i < 3; i++) {
-//     var tr = document.createElement('TR');
-//     tableBody.appendChild(tr);
-
-//     for (var j = 0; j < 4; j++) {
-//       var td = document.createElement('TD');
-//       td.width = '75';
-//       td.appendChild(document.createTextNode("Cell " + i + "," + j));
-//       tr.appendChild(td);
-//     }
-//   }
-//   myTableDiv.appendChild(table);
+  addSummaryTable();

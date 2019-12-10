@@ -1,8 +1,6 @@
 function showNavMenu () {
-  console.log ('showNavMenu');
   var x = document.getElementById ('nav-menu');
   if (x.style.display === 'none') {
-    console.log("display none!");
     x.style.display = 'block';
   } else {
     x.style.display = 'none';

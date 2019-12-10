@@ -268,13 +268,9 @@ function toSummaryAnimation() {
   let inBetween = (1000 - 200) / 11;
   wineData.forEach((wine, i) => {
     let startX = 200 + i * inBetween;
-    let summaryX = wine.summaryPosition.cx;// * 160 + 200;
+    let summaryX = wine.summaryPosition.cx;
     let summaryY = wine.summaryPosition.cy;
     let transformX = summaryX - startX;
-
-    console.log(wine.variety, summaryX, summaryY);
-    let id = wine._id;
-
     // Standard syntax
     document.getElementById(
       `wine-${i}`
