@@ -46,7 +46,7 @@ function addSummaryTable() {
                     var wine_img = document.createElement("img");
                     wine_img.setAttribute("src", "assets/wine-bottles/"+ name+".svg");
                     wine_img.setAttribute("class", "wine-bottle-img");
-                    // winebottle_td.appendChild(wine_img);
+                    winebottle_td.appendChild(wine_img);
                     winebottle_td.setAttribute("class", "wine-subtable-col1");
                     wine_tr2.appendChild(winebottle_td);
 

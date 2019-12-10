@@ -252,7 +252,7 @@ const wineData = [
       cx: 0.95,
     },
     colorPosition: {
-      cx: 0.82,
+      cx: 0.015,
     },
     sugarPosition: {
       cx: 0.9,
@@ -287,7 +287,7 @@ const wineData = [
       cx: 520,
     },
     colorPosition: {
-      cx: 0.015,
+      cx: 0.08,
     },
     sugarPosition: {
       cx: 1.3,
@@ -322,7 +322,7 @@ const wineData = [
       cx: 0.12,
     },
     colorPosition: {
-      cx: 0.08,
+      cx: 0.42,
     },
     sugarPosition: {
       cx: 3.9,
@@ -392,7 +392,7 @@ const wineData = [
       cx: 1000,
     },
     colorPosition: {
-      cx: 0.42,
+      cx: 0.82,
     },
     sugarPosition: {
       cx: 3.1,
