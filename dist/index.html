@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>UI Animating on Scroll: GSAP + ScrollMagic</title>
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles2.css" />
     <link rel="stylesheet" href="./visualization.css" />
     <link rel="stylesheet" href="./styles/tooltipster.bundle.min.css" />
     <link rel="stylesheet" href="./styles/tooltipster-sideTip-shadow.min.css" />
@@ -73,7 +74,7 @@
         </div>
       </div>
 
-      <div class="section" id="viz-color" style="background-color: azure">
+      <div class="section" id="viz-color" >
         <div class="container-wrapper">
           <div class="txt-container">
             <div class="title">Wine Color</div></br>
@@ -87,7 +88,7 @@
         </div>
       </div>
 
-      <div class="section" id="viz-sugar" style="background-color: antiquewhite">
+      <div class="section" id="viz-sugar" >
           <div class="container-wrapper">
             <div class="txt-container">
               <div class="title">Sweet & Dry</div></br>
@@ -99,7 +100,7 @@
           </div>
         </div>
 
-        <div class="section" id="viz-boldness" style="background-color: bisque">
+        <div class="section" id="viz-boldness" >
             <div class="container-wrapper">
               <div class="txt-container">
                 <div class="title">Boldness & Climate</div></br>
@@ -112,19 +113,18 @@
             </div>
           </div>
 
-          <div class="section" id="viz-flavor" style="background-color: aliceblue">
+          <div class="section" id="viz-flavor" >
               <div class="container-wrapper">
                 <div class="txt-container">
                   <div class="title">Flavors</div></br>
                   <div class="content">
-                      How do wines contain flavors like apple, caramel, or even spices? The flavor from wine comes from the fermentation process, which releases flavors from the grapes themselves that may remind you of other fruits and foods. The science behind wine flavor is complex, and other factors including when the grapes are picked and fermentation can play a part.
+                      How do wines contain flavors like apple, caramel, or even spices? The flavor from wine comes from the fermentation process, which releases flavors from the grapes themselves that may remind you of other fruits and foods. The science behind wine flavor is complex, and other factors including when the grapes are picked and fermentation can play a part.  
                   </div>
                 </div>
                 <img id="flavor-wheel" src="assets/flavor-wheel.svg" alt="flavor wheel" />
               </div>
             </div>
-
-            <div class="section" id="viz-glass" style="background-color: seashell">
+            <div class="section" id="viz-glass" >
                 <div class="container-wrapper">
                   <div class="txt-container">
                     <div class="title">Serving Glass</div></br>
@@ -136,7 +136,7 @@
                 </div>
               </div>
 
-              <div class="section" id="viz-temperature" style="background-color: floralwhite">
+              <div class="section" id="viz-temperature" >
                   <div class="container-wrapper">
                     <div class="txt-container">
                       <div class="title">Serving Temperature</div></br>
@@ -148,7 +148,7 @@
                 </div>
               </div>
 
-              <div class="section" id="viz-pairing" style="background-color: lavenderblush">
+              <div class="section" id="viz-pairing">
                   <div class="container-wrapper">
                     <div class="txt-container">
                       <div class="title">Pairing</div></br>
@@ -179,7 +179,9 @@
                     <div class="txt-container">
                       <div class="title">Congrats!</div></br>
                       <div class="content">
+                        <div id="summary-text">
                           If you’ve reached this point, you’ve learned a lot about wine by now! To make it easy for you, we’ve created a chart with a few extra details so you can quickly find which wines you want to try.
+                        </div>
                           <div id="wine-summary-table"></div>
 
                           <button id="nav-img" class="summary-button" onclick="printDiv('wine-summary-table')">Print!</button>
@@ -192,7 +194,6 @@
               </div>
     </section>
 
-   
     <!-- partial -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TimelineMax.min.js"></script>
@@ -213,16 +214,16 @@
 
     <script type="text/javascript" src="./tooltipster.bundle.min.js"></script>
     <script>
-      $(document).ready(function() {
-          $('.tooltip').tooltipster({
-          theme: 'tooltipster-shadow',
-          'maxWidth': 270,
-          contentAsHTML: true,
-          trigger: 'hover',
-          position: 'bottom',
-          animationDuration: 500,
-        });
+    $(document).ready(function() {
+        $('.tooltip').tooltipster({
+        theme: 'tooltipster-shadow',
+        'maxWidth': 270,
+        contentAsHTML: true,
+        trigger: 'hover',
+        position: 'bottom',
+        animationDuration: 200,
       });
+    });
   </script>
   </body>
 </html>

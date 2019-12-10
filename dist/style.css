@@ -1,9 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
@@ -15,62 +11,6 @@ body h1 {
   font-size: 2em;
   text-align: center;
   margin-top: 30%;
-}
-
-/* #navigation {
-  position: fixed;
-  bottom: 30px;
-  right: 15px;
-  z-index: 999;
-  width: 200px;
-  height: 200px;
-  float: left;
-  border: 1px solid blue;
-} */
-
-#nav-img {
-  position: fixed;
-  right: 10px;
-  bottom: 15px;
-  z-index: 999;
-  position: fixed;
-  
-}
-button#nav-img  {
-  outline: none;
-  border: none;
-  background: none;
-}
-
-#nav-menu {
-  position: fixed;
-  z-index: 999;
-  right: 60px;
-  bottom: 50px;
-  width: 150px;
-  padding: 15px 20px;
-  background-color: white;
-  box-shadow: 2px 5px 5px 2px rgba(200, 200, 200, 0.75);
-}
-
-#nav-menu ol {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-#nav-menu li {
-  margin: 10px 0;
-}
-
-#nav-menu a {
-  color: #838383;
-  text-decoration: none;
-}
-
-#nav-menu a.active {
-  color: black;
-  font-weight: bold;
 }
 
 .title img {
@@ -145,10 +85,6 @@ button#nav-img  {
   margin-top: 15%;
 }
 
-section:nth-child(odd) {
-  background: #f1f1f1;
-}
-
 .sticky {
   background: white !important;
 }
@@ -172,58 +108,3 @@ section:nth-child(odd) {
 }
 
 /*# sourceMappingURL=style.css.map */
-#viz-summary .container-wrapper {
-  padding-top: 15vh !important;
-}
-
-#wine-summary-table {
-  margin: 20px 0px;
-}
-
-#wine-summary-table table {
-  width: 100%;
-}
-
-td.wine-subtable {
-  width: 33.3%;
-}
-
-#wine-summary-table td {
-  vertical-align: top;
-  padding: 5px;
-}
-
-.wine-subtable-col1 {
-  width: 30px;
-}
-
-.wine-table-name {
-  text-transform: uppercase;
-}
-
-/* .tooltipster-sidetip .tooltipster-box {
-  background:#fff
-}
-
-.tooltipster-sidetip .tooltipster-content {
-  color: black;
-} */
-
-.summary-button {
-  z-index: 999;
-  padding: 0 40px;  
-  background-color: white;
-  color: black;
-  border: 2px solid #4CAF50;
-}
-
-.summary-button:hover {
-  background-color: #4CAF50;
-  color: white;
-}
-/* box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19); */
-
-@media print {
-  @page { margin: 0; }
-  body { margin: 1.6cm; }
-}
