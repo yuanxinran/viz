@@ -90,6 +90,26 @@ $(document).ready(function() {
       toPairingAnimation();
     })
     .addTo(controller);
+
+    const sceneConclusion = new ScrollMagic.Scene({
+      triggerElement: '#viz-conclusion',
+      triggerHook: 'onCenter',
+      duration: '100%',
+    })
+      .on('enter', function() {
+        toConclusionAnimation();
+      })
+      .addTo(controller);
+
+    const sceneSummary = new ScrollMagic.Scene({
+      triggerElement: '#viz-summary',
+      triggerHook: 'onCenter',
+      duration: '100%',
+    })
+      .on('enter', function() {
+        toSummaryAnimation();
+      })
+      .addTo(controller);
 });
 
 function drawInitialDots() {
@@ -247,6 +267,41 @@ function toPairingAnimation() {
     document.getElementById(
       `wine-${i}`
     ).style.transform = `translate(0px, ${getWindowHeightForViz() * 7 + 20}px)`;
+  });
+}
+
+function toConclusionAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    // let pairingX = wine.pairingPosition.cx * 250 + 225;
+    // let pairingY = wine.pairingPosition.cy;
+    // let transformX = pairingX - startX;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(0px, ${getWindowHeightForViz() * 8 + 180}px)`;
+  });
+}
+
+function toSummaryAnimation() {
+  let inBetween = (1000 - 200) / 11;
+  wineData.forEach((wine, i) => {
+    let startX = 200 + i * inBetween;
+    let summaryX = wine.summaryPosition.cx;// * 160 + 200;
+    let summaryY = wine.summaryPosition.cy;
+    let transformX = summaryX - startX;
+
+    console.log(wine.variety, summaryX, summaryY);
+    let id = wine._id;
+
+    // Standard syntax
+    document.getElementById(
+      `wine-${i}`
+    ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
+      9 +
+      summaryY}px)`;
   });
 }
 

@@ -49,14 +49,3 @@ function onScroll(event){
         }
     });
 }
-
-// $('#nav-menu a').each(function () {
-//   var currLink = $(this);
-//   var refElement = $(currLink.attr("href"));
-//   var refElementTop = refElement.position().top + 948*2
-//   var refElementBottom = refElement.position().top + refElement.height()
-//   console.log(refElement);
-//   console.log("TOP",refElementTop);
-//   console.log("height",refElement.height());
-//   console.log("BOT",refElementBottom);
-// });
