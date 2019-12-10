@@ -29,10 +29,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 195
+      cy: 195,
     },
     color: 'red',
-    description: "Pinot is the most popular light-bodied red wine. It’s versatile and can be paired with many foods. Fun fact: Pinot Noir & Chardonnay grow in the same climate!"
+    description:
+      'Pinot is the most popular light-bodied red wine. It’s versatile and can be paired with many foods. Fun fact: Pinot Noir & Chardonnay grow in the same climate!',
   },
   {
     _id: 1,
@@ -64,10 +65,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 195
+      cy: 195,
     },
     color: 'red',
-    description: "Cabernet Sauvignon is the most popular red wine grape, and is a mix between Cabernet Franc and Sauvignon Blanc. It full-bodied and pairs well with flavorful dishes."
+    description:
+      'Cabernet Sauvignon is the most popular red wine grape, and is a mix between Cabernet Franc and Sauvignon Blanc. It full-bodied and pairs well with flavorful dishes.',
   },
   {
     _id: 2,
@@ -99,10 +101,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 195
+      cy: 195,
     },
     color: 'red',
-    description: "Merlot and Cabernet Sauvignon are often confused, but Merlot may have chocolate notes. It’s a great wine to experiment with, and pairs with a lot of foods!"
+    description:
+      'Merlot and Cabernet Sauvignon are often confused, but Merlot may have chocolate notes. It’s a great wine to experiment with, and pairs with a lot of foods!',
   },
   {
     _id: 3,
@@ -134,10 +137,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 385
+      cy: 385,
     },
     color: 'white',
-    description: "This is a dry white wine with light body. It is unique with its herbal flavors, like bell pepper and grass. Pair with any dish with green herbs and it’ll be a hit!"
+    description:
+      'This is a dry white wine with light body. It is unique with its herbal flavors, like bell pepper and grass. Pair with any dish with green herbs and it’ll be a hit!',
   },
   {
     _id: 4,
@@ -169,10 +173,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 385
+      cy: 385,
     },
     color: 'white',
-    description: "Chardonnay is produced in many styles. With tropical notes, this wine goes well with creamy, buttery flavors and textures that can be found in Brie and lobster!"
+    description:
+      'Chardonnay is produced in many styles. With tropical notes, this wine goes well with creamy, buttery flavors and textures that can be found in Brie and lobster!',
   },
   {
     _id: 5,
@@ -204,10 +209,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 385
+      cy: 385,
     },
     color: 'pink',
-    description: "Dry Rosé Wines are actually the most commonly produced rosés! These blends go well with lighter dishes, especially seafood and goat cheese."
+    description:
+      'Dry Rosé Wines are actually the most commonly produced rosés! These blends go well with lighter dishes, especially seafood and goat cheese.',
   },
   {
     _id: 6,
@@ -239,10 +245,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 555
+      cy: 555,
     },
     color: 'pink',
-    description: "Any Rosé wine can be produced in a sweet style by not fermenting all the sugar into alcohol! Pink Moscato is a well known sweet Rosé and pairs well with lighter foods."
+    description:
+      'Any Rosé wine can be produced in a sweet style by not fermenting all the sugar into alcohol! Pink Moscato is a well known sweet Rosé and pairs well with lighter foods.',
   },
   {
     _id: 7,
@@ -274,10 +281,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 555
+      cy: 555,
     },
     color: 'white',
-    description: "Pinot Gris and Pinot Grigio are actually the same wine. It’s refreshing and slightly acidic. and goes well with fresh foods like fish and seafood."
+    description:
+      'Pinot Gris and Pinot Grigio are actually the same wine. It’s refreshing and slightly acidic. and goes well with fresh foods like fish and seafood.',
   },
   {
     _id: 8,
@@ -309,10 +317,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 555
+      cy: 555,
     },
     color: 'white',
-    description: "Moscato is tropical and floral, and famous for being sweet. It’s a great pairing for Asian cuisines, and handles spicy food well. It also goes well with spices like ginger!"
+    description:
+      'Moscato is tropical and floral, and famous for being sweet. It’s a great pairing for Asian cuisines, and handles spicy food well. It also goes well with spices like ginger!',
   },
   {
     _id: 9,
@@ -344,10 +353,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 767
+      cy: 767,
     },
     color: 'white',
-    description: "White Zinfandel can also be categorized as a “blush” wine. It can be great as a dessert wine! White Zinfandel pairs especially well with strawberries."
+    description:
+      'White Zinfandel can also be categorized as a “blush” wine. It can be great as a dessert wine! White Zinfandel pairs especially well with strawberries.',
   },
   {
     _id: 10,
@@ -379,10 +389,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 767
+      cy: 767,
     },
     color: 'white',
-    description: "Riesling can vary in its sweetness, from bone dry to very sweet. Off-dry Riesling can be a great pairing for Indian or Asian cuisines, and goes well with spice."
+    description:
+      'Riesling can vary in its sweetness, from bone dry to very sweet. Off-dry Riesling can be a great pairing for Indian or Asian cuisines, and goes well with spice.',
   },
   {
     _id: 11,
@@ -414,10 +425,11 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 767
+      cy: 767,
     },
     color: 'red',
-    description: "Malbec is the most popular wine variety produced in Argentina, where the sunny climate helps it grow. It’s great with some lean red meat and blue cheese!"
+    description:
+      'Malbec is the most popular wine variety produced in Argentina, where the sunny climate helps it grow. It’s great with some lean red meat and blue cheese!',
   },
 ];
 
