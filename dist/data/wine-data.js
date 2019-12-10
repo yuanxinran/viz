@@ -134,7 +134,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 385
+      cy: 405
     },
     color: 'white',
     description: "This is a dry white wine with light body. It is unique with its herbal flavors, like bell pepper and grass. Pair with any dish with green herbs and it’ll be a hit!"
@@ -169,7 +169,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 385
+      cy: 405
     },
     color: 'white',
     description: "Chardonnay is produced in many styles. With tropical notes, this wine goes well with creamy, buttery flavors and textures that can be found in Brie and lobster!"
@@ -204,7 +204,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 385
+      cy: 405
     },
     color: 'pink',
     description: "Dry Rosé Wines are actually the most commonly produced rosés! These blends go well with lighter dishes, especially seafood and goat cheese."
@@ -239,7 +239,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 555
+      cy: 618
     },
     color: 'pink',
     description: "Any Rosé wine can be produced in a sweet style by not fermenting all the sugar into alcohol! Pink Moscato is a well known sweet Rosé and pairs well with lighter foods."
@@ -269,12 +269,12 @@ const wineData = [
       cy: 140,
     },
     temperaturePosition: {
-      cx: 3,
-      cy: 80,
+      cx: 0,
+      cy: 150,
     },
     summaryPosition: {
       cx: 460,
-      cy: 555
+      cy: 618
     },
     color: 'white',
     description: "Pinot Gris and Pinot Grigio are actually the same wine. It’s refreshing and slightly acidic. and goes well with fresh foods like fish and seafood."
@@ -309,7 +309,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 794,
-      cy: 555
+      cy: 618
     },
     color: 'white',
     description: "Moscato is tropical and floral, and famous for being sweet. It’s a great pairing for Asian cuisines, and handles spicy food well. It also goes well with spices like ginger!"
@@ -344,7 +344,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 129,
-      cy: 767
+      cy: 820
     },
     color: 'white',
     description: "White Zinfandel can also be categorized as a “blush” wine. It can be great as a dessert wine! White Zinfandel pairs especially well with strawberries."
@@ -379,7 +379,7 @@ const wineData = [
     },
     summaryPosition: {
       cx: 460,
-      cy: 767
+      cy: 820
     },
     color: 'white',
     description: "Riesling can vary in its sweetness, from bone dry to very sweet. Off-dry Riesling can be a great pairing for Indian or Asian cuisines, and goes well with spice."
@@ -409,12 +409,12 @@ const wineData = [
       cy: 95,
     },
     temperaturePosition: {
-      cx: 0,
-      cy: 150,
+      cx: 3,
+      cy: 80,
     },
     summaryPosition: {
       cx: 794,
-      cy: 767
+      cy: 820
     },
     color: 'red',
     description: "Malbec is the most popular wine variety produced in Argentina, where the sunny climate helps it grow. It’s great with some lean red meat and blue cheese!"
