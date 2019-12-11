@@ -318,6 +318,7 @@ function toSummaryAnimation() {
       `wine-${i}`
     ).style.transform = `translate(${transformX}px, ${getWindowHeightForViz() *
       8.3 +
+      20 +
       summaryY}px)`;
   });
 }

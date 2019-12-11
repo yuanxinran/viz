@@ -64,6 +64,9 @@
   background-repeat: no-repeat;
   background-size: 150px;
 }
+#viz .section .container-wrapper #summary-button {
+  z-index: 100;
+}
 #viz .section .container-wrapper img {
   position: absolute;
   width: 1000px;
