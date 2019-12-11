@@ -265,7 +265,7 @@ const wineData = [
       cx: 0.9,
     },
     boldPosition: {
-      cx: 0.95,
+      cx: 0.05,
     },
     flavorPosition: {
       cx: 768,
@@ -409,7 +409,7 @@ const wineData = [
       cx: 3.1,
     },
     boldPosition: {
-      cx: 0.05,
+      cx: 0.95,
     },
     flavorPosition: {
       cx: 675,
