@@ -16,7 +16,7 @@ const wineData = [
       cx: 0.4,
     },
     flavorPosition: {
-      cx: 940,
+      cx: 950,
       cy: 200,
     },
     glassPosition: {
@@ -28,8 +28,8 @@ const wineData = [
       cy: 150,
     },
     summaryPosition: {
-      cx: 129,
-      cy: 195
+      cx: 126,
+      cy: 200
     },
     color: 'red',
     description: "Pinot is the most popular light-bodied red wine. It’s versatile and can be paired with many foods. Fun fact: Pinot Noir & Chardonnay grow in the same climate!"
@@ -51,8 +51,8 @@ const wineData = [
       cx: 0.9,
     },
     flavorPosition: {
-      cx: 850,
-      cy: 320,
+      cx: 865,
+      cy: 310,
     },
     glassPosition: {
       cx: 0,
@@ -63,8 +63,8 @@ const wineData = [
       cy: 150,
     },
     summaryPosition: {
-      cx: 460,
-      cy: 195
+      cx: 457,
+      cy: 200
     },
     color: 'red',
     description: "Cabernet Sauvignon is the most popular red wine grape, and is a mix between Cabernet Franc and Sauvignon Blanc. It full-bodied and pairs well with flavorful dishes."
@@ -86,7 +86,7 @@ const wineData = [
       cx: 0.7,
     },
     flavorPosition: {
-      cx: 800,
+      cx: 815,
       cy: 320,
     },
     glassPosition: {
@@ -98,11 +98,11 @@ const wineData = [
       cy: 115,
     },
     summaryPosition: {
-      cx: 794,
-      cy: 195
+      cx: 790,
+      cy: 200
     },
     color: 'red',
-    description: "Merlot and Cabernet Sauvignon are often confused, but Merlot may have chocolate notes. It’s a great wine to experiment with, and pairs with a lot of foods!"
+    description: "Merlot and Cabernet Sauvignon are often confused, but Merlot usually has stronger chocolate notes. It’s a great wine to experiment with, and pairs with a lot of foods!"
   },
   {
     _id: 3,
@@ -121,8 +121,8 @@ const wineData = [
       cx: 0.02,
     },
     flavorPosition: {
-      cx: 720,
-      cy: 280,
+      cx: 716,
+      cy: 285,
     },
     glassPosition: {
       cx: 4,
@@ -133,8 +133,8 @@ const wineData = [
       cy: 80,
     },
     summaryPosition: {
-      cx: 129,
-      cy: 405
+      cx: 126,
+      cy: 396
     },
     color: 'white',
     description: "This is a dry white wine with light body. It is unique with its herbal flavors, like bell pepper and grass. Pair with any dish with green herbs and it’ll be a hit!"
@@ -156,8 +156,8 @@ const wineData = [
       cx: 0.47,
     },
     flavorPosition: {
-      cx: 740,
-      cy: 50,
+      cx: 770,
+      cy: 40,
     },
     glassPosition: {
       cx: 5,
@@ -168,8 +168,8 @@ const wineData = [
       cy: 45,
     },
     summaryPosition: {
-      cx: 460,
-      cy: 405
+      cx: 457,
+      cy: 396
     },
     color: 'white',
     description: "Chardonnay is produced in many styles. With tropical notes, this wine goes well with creamy, buttery flavors and textures that can be found in Brie and lobster!"
@@ -203,8 +203,8 @@ const wineData = [
       cy: 150,
     },
     summaryPosition: {
-      cx: 794,
-      cy: 405
+      cx: 790,
+      cy: 396
     },
     color: 'pink',
     description: "Dry Rosé Wines are actually the most commonly produced rosés! These blends go well with lighter dishes, especially seafood and goat cheese."
@@ -226,7 +226,7 @@ const wineData = [
       cx: 0.57,
     },
     flavorPosition: {
-      cx: 670,
+      cx: 685,
       cy: 250,
     },
     glassPosition: {
@@ -238,8 +238,8 @@ const wineData = [
       cy: 115,
     },
     summaryPosition: {
-      cx: 129,
-      cy: 618
+      cx: 126,
+      cy: 590
     },
     color: 'pink',
     description: "Any Rosé wine can be produced in a sweet style by not fermenting all the sugar into alcohol! Pink Moscato is a well known sweet Rosé and pairs well with lighter foods."
@@ -261,8 +261,8 @@ const wineData = [
       cx: 0.95,
     },
     flavorPosition: {
-      cx: 760,
-      cy: 300,
+      cx: 768,
+      cy: 312,
     },
     glassPosition: {
       cx: 3,
@@ -273,11 +273,11 @@ const wineData = [
       cy: 150,
     },
     summaryPosition: {
-      cx: 460,
-      cy: 618
+      cx: 457,
+      cy: 590
     },
     color: 'white',
-    description: "Pinot Gris and Pinot Grigio are actually the same wine. It’s refreshing and slightly acidic. and goes well with fresh foods like fish and seafood."
+    description: "Pinot Gris and Pinot Grigio are actually the same wine. It’s refreshing and slightly acidic. They pair well with fresh foods like fish and seafood."
   },
   {
     _id: 8,
@@ -308,8 +308,8 @@ const wineData = [
       cy: 10,
     },
     summaryPosition: {
-      cx: 794,
-      cy: 618
+      cx: 790,
+      cy: 590
     },
     color: 'white',
     description: "Moscato is tropical and floral, and famous for being sweet. It’s a great pairing for Asian cuisines, and handles spicy food well. It also goes well with spices like ginger!"
@@ -331,8 +331,8 @@ const wineData = [
       cx: 0.1,
     },
     flavorPosition: {
-      cx: 710,
-      cy: 75,
+      cx: 725,
+      cy: 66,
     },
     glassPosition: {
       cx: 4.09,
@@ -343,8 +343,8 @@ const wineData = [
       cy: -25,
     },
     summaryPosition: {
-      cx: 129,
-      cy: 820
+      cx: 126,
+      cy: 782
     },
     color: 'white',
     description: "White Zinfandel can also be categorized as a “blush” wine. It can be great as a dessert wine! White Zinfandel pairs especially well with strawberries."
@@ -378,8 +378,8 @@ const wineData = [
       cy: 115,
     },
     summaryPosition: {
-      cx: 460,
-      cy: 820
+      cx: 457,
+      cy: 782
     },
     color: 'white',
     description: "Riesling can vary in its sweetness, from bone dry to very sweet. Off-dry Riesling can be a great pairing for Indian or Asian cuisines, and goes well with spice."
@@ -413,8 +413,8 @@ const wineData = [
       cy: 80,
     },
     summaryPosition: {
-      cx: 794,
-      cy: 820
+      cx: 790,
+      cy: 782
     },
     color: 'red',
     description: "Malbec is the most popular wine variety produced in Argentina, where the sunny climate helps it grow. It’s great with some lean red meat and blue cheese!"
